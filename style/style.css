@@ -1,0 +1,41 @@
+.wrapper {
+    /* background-color: blue; */
+    height: 800px;
+    max-width: 1000px;
+    border: 1px solid black;
+    margin: 0px auto;
+    position: relative;
+    /* padding: 0 50px; */
+    box-sizing: border-box;
+}
+
+.parent-box {
+    background-color: fuchsia;
+    height: 100px;
+    width: 200px;
+    position: absolute;
+    bottom: 20px;
+    right: 30px;
+}
+
+@media screen and (max-width: 850px) {
+    .parent-box {
+    height: 95%;
+    width: 100px;
+    position: absolute;
+    /* top: 20px; */
+    bottom: 20px;
+    right: 20px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .parent-box {
+    height: 100px;
+    width: 91%;
+    position: absolute;
+    bottom: 10px;
+    /* right: 20px; */
+    left: 20px;
+    }
+}
